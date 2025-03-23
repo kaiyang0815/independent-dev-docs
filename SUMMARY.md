@@ -15,3 +15,7 @@
   * [路由处理程序](gou-jian-ni-de-ying-yong-cheng-xu/lu-you/lu-you-chu-li-cheng-xu.md)
   * [中间件](gou-jian-ni-de-ying-yong-cheng-xu/lu-you/zhong-jian-jian.md)
   * [国际化](gou-jian-ni-de-ying-yong-cheng-xu/lu-you/guo-ji-hua.md)
+* [数据获取](gou-jian-ni-de-ying-yong-cheng-xu/shu-ju-huo-qu/README.md)
+  * [数据获取和缓存](gou-jian-ni-de-ying-yong-cheng-xu/shu-ju-huo-qu/shu-ju-huo-qu-he-huan-cun.md)
+  * [服务器操作和变更](gou-jian-ni-de-ying-yong-cheng-xu/shu-ju-huo-qu/fu-wu-qi-cao-zuo-he-bian-geng.md)
+  * [增量静态再生（ISR）](gou-jian-ni-de-ying-yong-cheng-xu/shu-ju-huo-qu/zeng-liang-jing-tai-zai-sheng-isr.md)

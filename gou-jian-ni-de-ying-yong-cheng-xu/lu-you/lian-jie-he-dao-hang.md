@@ -194,7 +194,7 @@ Next.js 有一个名为<mark style="color:blue;">路由缓存</mark>的内存**�
 
 例如，当在两个兄弟路由 `/dashboard/settings` 和 `/dashboard/analytics` 之间导航时， `settings` 页面将被卸载， `analytics` 页面将以新的状态挂载，共享的 `dashboard`布局将被保留。此行为在同一动态段之间的两个路由之间也是存在的，例如在 `/blog/[slug]/page` 中从 `/blog/first` 导航到 `/blog/second` 时。
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 没有部分渲染的情况下，每次导航都会导致整个页面在客户端重新渲染。只渲染变化的部分减少了传输的数据量和执行时间，从而提高了性能。
 

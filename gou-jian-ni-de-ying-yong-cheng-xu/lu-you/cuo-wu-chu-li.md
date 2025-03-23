@@ -129,7 +129,7 @@ export default function Error({
 
 错误将冒泡到最近的父错误边界。这允许通过在路由层次结构的不同级别放置 `error.tsx`文件来进行细粒度的错误处理。
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 处理全局错误
 

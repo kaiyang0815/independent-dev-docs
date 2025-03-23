@@ -2,7 +2,7 @@
 
 特殊文件 `loading.js` 帮助您使用 React Suspense 创建有意义的加载 UI。通过这种约定，您可以在路由段内容加载时立即显示来自服务器的加载状态。一旦渲染完成，新内容会自动替换。
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 即时记载状态
 

@@ -6,13 +6,15 @@ Next.js 使用基于文件系统的路由，这意味着您可以使用文件夹
 
 页面是根据特定路由渲染的用户界面。要创建一个页面，请在 `app` 目录中添加一个 `page`文件，并默认导出一个 React 组件。例如，要创建一个索引页面（ `/` ）：
 
-<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><picture><source srcset="https://nextjs.org/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Fdark%2Fpage-special-file.png&#x26;w=1920&#x26;q=75" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/image (30).png" alt=""></picture><figcaption></figcaption></figure>
 
+{% code title="app/page.tsx" %}
 ```tsx
 export default function Page() {
   return <h1>Hello Next.js!</h1>
 }
 ```
+{% endcode %}
 
 ### 创建布局
 
@@ -22,7 +24,7 @@ export default function Page() {
 
 例如，要创建一个接受你的索引页面作为子项的布局，请在 `app` 目录中添加一个 `layout` 文件：
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><picture><source srcset="../../.gitbook/assets/image (1).png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/image (6).png" alt=""></picture><figcaption></figcaption></figure>
 
 ```tsx
 export default function DashboardLayout({
@@ -59,7 +61,7 @@ export default function DashboardLayout({
 
 要创建嵌套路由，可以将文件夹嵌套在一起。例如，要为 `/blog` 添加路由，请在 `app` 目录中创建一个名为 `blog` 的文件夹。然后，要使 `/blog` 可公开访问，请添加一个 `page`文件：
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><picture><source srcset="../../.gitbook/assets/image.png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/image (1) (1).png" alt=""></picture><figcaption></figcaption></figure>
 
 ```tsx
 import { getPosts } from '@/lib/posts'
@@ -80,7 +82,7 @@ export default async function Page() {
 
 您可以继续嵌套文件夹以创建嵌套路由。例如，要为特定的博客文章创建路由，请在 `blog` 内创建一个新的 `[slug]` 文件夹，并添加一个 `page` 文件：
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><picture><source srcset="../../.gitbook/assets/image (2).png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/image (2) (1).png" alt=""></picture><figcaption></figcaption></figure>
 
 ```tsx
 function generateStaticParams() {}
@@ -100,7 +102,7 @@ export default function Page() {
 
 例如，要为 `/blog` 路由创建布局，请在 `blog` 文件夹中添加一个新的 `layout` 文件。
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><picture><source srcset="../../.gitbook/assets/image (3).png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/image (3) (1).png" alt=""></picture><figcaption></figcaption></figure>
 
 ```tsx
 export default function BlogLayout({
