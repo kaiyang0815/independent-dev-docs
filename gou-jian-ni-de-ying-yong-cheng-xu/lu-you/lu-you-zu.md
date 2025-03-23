@@ -22,7 +22,7 @@
 
 为了在不影响 URL 的情况下组织路由，创建一个组以将相关路由放在一起。括号中的文件夹将从 URL 中省略（例如 `(marketing)` 或 `(shop)` ）。
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 尽管 `(marketing)` 和 `(shop)` 内的路由共享相同的 URL 层次结构，但您可以通过在它们的文件夹中添加 `layout.js` 文件来为每个组创建不同的布局。
 
@@ -30,7 +30,7 @@
 
 要将特定路由纳入到布局中，请创建一个新的路由组（例如 `(shop)` ），并将共享相同布局的路由移动到该组中（例如 `account` 和 `cart` ）。组外的路由将不共享该布局（例如 `checkout` ）。
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 在路由上选择加载骨架屏
 

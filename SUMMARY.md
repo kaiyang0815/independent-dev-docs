@@ -25,3 +25,4 @@
   * [组合模式](gou-jian-ni-de-ying-yong-cheng-xu/xuan-ran/zu-he-mo-shi.md)
   * [部分预渲染](gou-jian-ni-de-ying-yong-cheng-xu/xuan-ran/bu-fen-yu-xuan-ran.md)
   * [运行时](gou-jian-ni-de-ying-yong-cheng-xu/xuan-ran/yun-xing-shi.md)
+* [缓存](gou-jian-ni-de-ying-yong-cheng-xu/huan-cun.md)

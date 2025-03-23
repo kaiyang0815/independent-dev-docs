@@ -14,7 +14,7 @@
 
 有两个环境可以渲染 Web 应用程序：客户端和服务器。
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 * **客户端**指的是用户设备上的浏览器，它向服务器发送请求以获取您的应用程序代码。然后，它将服务器的响应转换为用户界面。
 * **服务器**指的是数据中心中的计算机，它存储您的应用程序代码，接收来自客户端的请求，并发送适当的响应。

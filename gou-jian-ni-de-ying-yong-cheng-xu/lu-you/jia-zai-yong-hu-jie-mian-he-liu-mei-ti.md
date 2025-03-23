@@ -2,7 +2,7 @@
 
 特殊文件 `loading.js` 帮助您使用 React Suspense 创建有意义的加载 UI。通过这种约定，您可以在路由段内容加载时立即显示来自服务器的加载状态。一旦渲染完成，新内容会自动替换。
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 即时记载状态
 
@@ -10,7 +10,7 @@
 
 通过在文件夹中添加 `loading.js` 文件来创建加载状态。
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```tsx
 export default function Loading() {
@@ -21,7 +21,7 @@ export default function Loading() {
 
 在同一文件夹中， `loading.js` 将嵌套在 `layout.js` 内部。它将自动包装 `page.js` 文件及其下面的任何子项在 `<Suspense>` 边界内。
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 > 需要知道的是：
 >
@@ -51,25 +51,25 @@ export default function Loading() {
 4. 使用生成的 HTML 和 CSS 显示一个非交互式用户界面。
 5. 最后，React 为用户界面<mark style="color:blue;">提供水合</mark>，使其变得互动。
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 这些步骤是顺序和阻塞的，这意味着服务器只能在所有数据都被获取后才能渲染页面的 HTML。而在客户端，React 只能在页面中所有组件的代码下载完成后才能水合 UI。
 
 使用 React 和 Next.js 的 SSR 通过尽快向用户显示非交互式页面来帮助提高感知加载性能。
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 然而，由于在页面显示给用户之前，所有数据获取都需要在服务器上完成，因此它仍然可能很慢。
 
 流式传输允许您将页面的 HTML 分解为更小的块，并逐步将这些块从服务器发送到客户端。
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 这使得页面的某些部分能够更早地显示，而无需等待所有数据加载完毕后再渲染任何用户界面。
 
 流式传输与 React 的组件模型非常契合，因为每个组件都可以视为一个块。优先级较高的组件（例如产品信息）或不依赖于数据的组件可以优先发送（例如布局），React 可以更早开始水合。优先级较低的组件（例如评论、相关产品）可以在其数据被获取后在同一服务器请求中发送。
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 流媒体特别有利于防止长时间的数据请求阻塞页面渲染，因为它可以减少首次字节时间（TTFB）和首次内容绘制时间（FCP）。它还帮助改善互动时间（TTI），尤其是在较慢的设备上。
 
