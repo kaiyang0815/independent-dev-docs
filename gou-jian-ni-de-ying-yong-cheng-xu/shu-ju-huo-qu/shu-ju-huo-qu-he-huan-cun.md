@@ -266,7 +266,7 @@ export const getPost = cache(async (id) => {
 
 在组件内部获取数据时，您需要了解两种数据获取模式：并行和顺序。
 
-<figure><picture><source srcset="../../.gitbook/assets/image (5).png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/image (4).png" alt=""></picture><figcaption></figcaption></figure>
+<figure><picture><source srcset="../../.gitbook/assets/image (5) (1).png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/image (4) (1).png" alt=""></picture><figcaption></figcaption></figure>
 
 * 顺序：组件树中的请求相互依赖。这可能导致更长的加载时间。
 * 并行：路由中的请求被积极发起，并将同时加载数据。这减少了加载数据所需的总时间。
