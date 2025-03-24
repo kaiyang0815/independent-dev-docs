@@ -97,11 +97,11 @@ React 服务端组件允许您编写可以在服务器上渲染并可选地缓�
 
 #### 流式传输
 
-<figure><picture><source srcset="../../.gitbook/assets/image (4) (1).png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/image (1) (1).png" alt=""></picture><figcaption></figcaption></figure>
+<figure><picture><source srcset="../../.gitbook/assets/image (4) (1).png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""></picture><figcaption></figcaption></figure>
 
 流式传输使您能够从服务器逐步渲染用户界面。工作被分成块，并在准备好时流式传输到客户端。这使得用户可以立即看到页面的部分内容，而无需等待整个内容渲染完成。
 
-<figure><picture><source srcset="../../.gitbook/assets/image (5) (1).png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/image (2) (1).png" alt=""></picture><figcaption></figcaption></figure>
+<figure><picture><source srcset="../../.gitbook/assets/image (5) (1).png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""></picture><figcaption></figcaption></figure>
 
 流式传输默认内置于 Next.js 应用路由中。这有助于提高初始页面加载性能，以及依赖于较慢数据获取的 UI，这些数据获取会阻塞整个路由的渲染。例如，产品页面上的评论。
 

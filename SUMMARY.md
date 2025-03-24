@@ -31,3 +31,7 @@
   * [Tailwind CSS](gou-jian-ni-de-ying-yong-cheng-xu/yang-shi/tailwind-css.md)
   * [Sass](gou-jian-ni-de-ying-yong-cheng-xu/yang-shi/sass.md)
   * [CSS-in-JS](gou-jian-ni-de-ying-yong-cheng-xu/yang-shi/css-in-js.md)
+* [优化](gou-jian-ni-de-ying-yong-cheng-xu/you-hua/README.md)
+  * [图像](gou-jian-ni-de-ying-yong-cheng-xu/you-hua/tu-xiang.md)
+  * [视频](gou-jian-ni-de-ying-yong-cheng-xu/you-hua/shi-pin.md)
+  * [字体](gou-jian-ni-de-ying-yong-cheng-xu/you-hua/zi-ti.md)

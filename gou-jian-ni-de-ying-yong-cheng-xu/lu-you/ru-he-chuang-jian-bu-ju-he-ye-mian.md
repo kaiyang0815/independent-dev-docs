@@ -24,7 +24,7 @@ export default function Page() {
 
 例如，要创建一个接受你的索引页面作为子项的布局，请在 `app` 目录中添加一个 `layout` 文件：
 
-<figure><picture><source srcset="../../.gitbook/assets/image (1) (1) (1).png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""></picture><figcaption></figcaption></figure>
+<figure><picture><source srcset="../../.gitbook/assets/image (1) (1) (1) (1).png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""></picture><figcaption></figcaption></figure>
 
 ```tsx
 export default function DashboardLayout({
@@ -61,7 +61,7 @@ export default function DashboardLayout({
 
 要创建嵌套路由，可以将文件夹嵌套在一起。例如，要为 `/blog` 添加路由，请在 `app` 目录中创建一个名为 `blog` 的文件夹。然后，要使 `/blog` 可公开访问，请添加一个 `page`文件：
 
-<figure><picture><source srcset="../../.gitbook/assets/image (6) (1).png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""></picture><figcaption></figcaption></figure>
+<figure><picture><source srcset="../../.gitbook/assets/image (6) (1).png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""></picture><figcaption></figcaption></figure>
 
 ```tsx
 import { getPosts } from '@/lib/posts'
@@ -82,7 +82,7 @@ export default async function Page() {
 
 您可以继续嵌套文件夹以创建嵌套路由。例如，要为特定的博客文章创建路由，请在 `blog` 内创建一个新的 `[slug]` 文件夹，并添加一个 `page` 文件：
 
-<figure><picture><source srcset="../../.gitbook/assets/image (2) (1) (1).png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""></picture><figcaption></figcaption></figure>
+<figure><picture><source srcset="../../.gitbook/assets/image (2) (1) (1) (1).png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""></picture><figcaption></figcaption></figure>
 
 ```tsx
 function generateStaticParams() {}
@@ -102,7 +102,7 @@ export default function Page() {
 
 例如，要为 `/blog` 路由创建布局，请在 `blog` 文件夹中添加一个新的 `layout` 文件。
 
-<figure><picture><source srcset="../../.gitbook/assets/image (3) (1) (1).png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""></picture><figcaption></figcaption></figure>
+<figure><picture><source srcset="../../.gitbook/assets/image (3) (1) (1) (1).png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""></picture><figcaption></figcaption></figure>
 
 ```tsx
 export default function BlogLayout({

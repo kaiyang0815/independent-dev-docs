@@ -17,7 +17,7 @@ Next.js 通过缓存渲染工作和数据请求来提高您应用程序的性能
 
 默认情况下，Next.js 将尽可能缓存以提高性能并降低成本。这意味着路由是静态渲染的，数据请求被缓存，除非您选择不缓存。下面的图表显示了默认的缓存行为：当路由在构建时静态渲染以及当静态路由首次访问时。
 
-<figure><picture><source srcset="../.gitbook/assets/image (8).png" media="(prefers-color-scheme: dark)"><img src="../.gitbook/assets/image.png" alt=""></picture><figcaption></figcaption></figure>
+<figure><picture><source srcset="../.gitbook/assets/image (8).png" media="(prefers-color-scheme: dark)"><img src="../.gitbook/assets/image (3).png" alt=""></picture><figcaption></figcaption></figure>
 
 缓存行为取决于路由是静态渲染还是动态渲染，数据是缓存还是未缓存，以及请求是初始访问的一部分还是后续导航。根据您的用例，您可以为单个路由和数据请求配置缓存行为。
 
@@ -25,7 +25,7 @@ Next.js 通过缓存渲染工作和数据请求来提高您应用程序的性能
 
 Next.js 扩展了 `fetch` API，以自动记忆具有相同 URL 和选项的请求。这意味着您可以在 React 组件树中的多个地方调用同一数据的 fetch 函数，同时只执行一次。
 
-<figure><picture><source srcset="../.gitbook/assets/image (9).png" media="(prefers-color-scheme: dark)"><img src="../.gitbook/assets/image (1).png" alt=""></picture><figcaption></figcaption></figure>
+<figure><picture><source srcset="../.gitbook/assets/image (9).png" media="(prefers-color-scheme: dark)"><img src="../.gitbook/assets/image (1) (1).png" alt=""></picture><figcaption></figcaption></figure>
 
 例如，如果您需要在一个路由中使用相同的数据（例如在 Layout、Page 和多个组件中），您不必在树的顶部获取数据，并在组件之间传递 props。相反，您可以在需要数据的组件中获取数据，而无需担心因在网络上对相同数据进行多次请求而带来的性能影响。
 
@@ -48,7 +48,7 @@ const item = await getItem() // 缓存命中
 
 **请求记忆化是如何工作的**
 
-<figure><picture><source srcset="../.gitbook/assets/image (10).png" media="(prefers-color-scheme: dark)"><img src="../.gitbook/assets/image (2).png" alt=""></picture><figcaption></figcaption></figure>
+<figure><picture><source srcset="../.gitbook/assets/image (10).png" media="(prefers-color-scheme: dark)"><img src="../.gitbook/assets/image (2) (1).png" alt=""></picture><figcaption></figcaption></figure>
 
 * 在渲染路由时，第一次调用特定请求时，其结果将不在内存中，它将是一个缓存 `MISS` 。
 * 因此，函数将被执行，数据将从外部源获取，结果将存储在内存中。
@@ -95,7 +95,7 @@ Next.js 具有内置的数据缓存，可以在传入的服务器请求和部署
 
 **数据缓存的工作原理**
 
-<figure><picture><source srcset="../.gitbook/assets/image (11).png" media="(prefers-color-scheme: dark)"><img src="../.gitbook/assets/image (3).png" alt=""></picture><figcaption></figcaption></figure>
+<figure><picture><source srcset="../.gitbook/assets/image (11).png" media="(prefers-color-scheme: dark)"><img src="../.gitbook/assets/image (3) (1).png" alt=""></picture><figcaption></figcaption></figure>
 
 * 第一次在渲染期间调用带有 `'force-cache'` 选项的 `fetch` 请求时，Next.js 会检查数据缓存以获取缓存的响应。
 * 如果找到缓存的响应，则立即返回并进行[记忆](huan-cun.md#qing-qiu-ji-yi-hua)。
